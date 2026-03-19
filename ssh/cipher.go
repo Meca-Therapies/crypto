@@ -129,6 +129,8 @@ func init() {
 	// You should expect that an active attacker can recover plaintext if
 	// you do.
 	cipherModes[InsecureCipherAES128CBC] = &cipherMode{16, aes.BlockSize, newAESCBCCipher}
+	cipherModes[InsecureCipherAES192CBC] = &cipherMode{24, aes.BlockSize, newAESCBCCipher}
+	cipherModes[InsecureCipherAES256CBC] = &cipherMode{32, aes.BlockSize, newAESCBCCipher}
 	cipherModes[InsecureCipherTripleDESCBC] = &cipherMode{24, des.BlockSize, newTripleDESCBCCipher}
 }
 

@@ -37,6 +37,8 @@ const (
 	CipherAES192CTR            = "aes192-ctr"
 	CipherAES256CTR            = "aes256-ctr"
 	InsecureCipherAES128CBC    = "aes128-cbc"
+	InsecureCipherAES192CBC    = "aes192-cbc"
+	InsecureCipherAES256CBC    = "aes256-cbc"
 	InsecureCipherTripleDESCBC = "3des-cbc"
 	InsecureCipherRC4          = "arcfour"
 	InsecureCipherRC4128       = "arcfour128"
@@ -128,6 +130,8 @@ var (
 	// package and which have security issues.
 	insecureCiphers = []string{
 		InsecureCipherAES128CBC,
+		InsecureCipherAES192CBC,
+		InsecureCipherAES256CBC,
 		InsecureCipherTripleDESCBC,
 		InsecureCipherRC4256,
 		InsecureCipherRC4128,
